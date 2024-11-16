@@ -1,0 +1,7 @@
+project_venv
+.env
+__pycache__
+.env
+venv
+env
+.db

@@ -1,0 +1,24 @@
+Alembic Commands : 
+
+To initialize and create alembic.ini and migrations files inside <path>
+> alembic init <path>
+
+
+Configure alembic.ini:
+
+Set the sqlalchemy.url in alembic.ini to match your DATABASE_URL
+> sqlalchemy.url = sqlite:///./test.db
+
+
+Modify env.py in app/migrations to include SQLModel:
+check env.py file of this project inside app/migrations
+
+
+After all db related work finished and above command 
+Create a migration script:
+> alembic revision --autogenerate -m "Initial migration"
+
+
+
+Apply migration file to db : 
+> alembic upgrade head

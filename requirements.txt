@@ -1,0 +1,13 @@
+fastapi[all]
+pyjwt
+passlib[bcrypt]
+sqlmodel
+alembic 
+psycopg2-binary
+python-jose
+pytest 
+pytest-asyncio
+httpx
+pre-commit
+black
+flake8
